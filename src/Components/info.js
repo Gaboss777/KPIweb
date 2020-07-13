@@ -1,69 +1,51 @@
 import React from "react";
-import { Container, Row, Col, Card} from "react-bootstrap"
+import { Container, Row, Col} from "react-bootstrap";
+import InfoList from "./infoList"
 
-function Info(){
-    return(
-        <Container fluid className="bg-banner-info">
-            <Row className="h-100">
-                <Col>
-                </Col>
-                <Col md="8">
-                    <Row className="h-100">
-                        <Col>
-                            <Card className="card-info rounded-circle h-100">
-                                <Card.Body>
-                                    <Card.Title className="text-center">Card Title</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted text-center">Card Subtitle</Card.Subtitle>
-                                    <Card.Text className="text-center">
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                    <Card.Text className="text-center">
-                                        <Card.Link href="#">Card Link</Card.Link>
-                                        <Card.Link href="#">Another Link</Card.Link>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="card-info rounded-circle h-100">
-                                <Card.Body>
-                                    <Card.Title className="text-center">Card Title</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted text-center">Card Subtitle</Card.Subtitle>
-                                    <Card.Text className="text-center">
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                    <Card.Text className="text-center">
-                                        <Card.Link href="#">Card Link</Card.Link>
-                                        <Card.Link href="#">Another Link</Card.Link>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="card-info rounded-circle h-100">
-                                <Card.Body>
-                                    <Card.Title className="text-center">Card Title</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted text-center">Card Subtitle</Card.Subtitle>
-                                    <Card.Text className="text-center">
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                    <Card.Text className="text-center">
-                                        <Card.Link href="#">Card Link</Card.Link>
-                                        <Card.Link href="#">Another Link</Card.Link>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col>
-                </Col>
-            </Row>
-        </Container>
-    )
+class Info extends React.Component {
+
+    constructor(props){
+        super(props)
+        this.state = {
+            data: [{
+                "id": 1,
+                "cardTitle": "Info 1",
+                "cardText": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+                "cardLink": "Card Link",
+                "cardLinkDos": "Another Link"
+            },{
+                "id": 2,
+                "cardTitle": "Info 2",
+                "cardText": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+                "cardLink": "Card Link",
+                "cardLinkDos": "Another Link"
+            },{
+                "id": 3,
+                "cardTitle": "Info 3",
+                "cardText": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+                "cardLink": "Card Link",
+                "cardLinkDos": "Another Link"
+            }]
+        }
+    }
+
+    render(){
+        return(
+            <Container fluid className="bg-banner-info">
+                <Row className="h-100">
+                    <Col>
+                    </Col>
+                    <Col md="8">
+                        <InfoList
+                            listinfo={this.state.data}
+                        />
+                    </Col>
+                    <Col>
+                    </Col>
+                </Row>
+            </Container>
+        )
+    }
 }
 
 export default Info

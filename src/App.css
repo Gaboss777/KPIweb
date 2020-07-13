@@ -9,3 +9,19 @@
 .card-info {
     width: 18rem;
 }
+
+/* Banner */
+.carrusel-img {
+    height: 95vh;
+    width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    visibility: hidden;
+}
+
+.caption-carrusel h3,
+.caption-carrusel p{
+    color: red;
+}

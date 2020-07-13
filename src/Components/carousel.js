@@ -1,22 +1,30 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel"
+import BannerCuatro from "../img/Banner4.jpeg";
+import BannerDos from "../img/banner2.jpg";
+import BannerTres from "../img/Banner3.jpg";
+import Listcarrusel from "./carouselList"
 
-function Carrusel(props){
+export const Carrusel = () => {
+    const data = [{
+        "id": 1,
+        "bannerImg": BannerCuatro,
+        "bannerTitle": "First slide label.",
+        "bannerText": "Nulla vitae elit libero, a pharetra augue mollis interdum",
+    },{
+        "id": 2,
+        "bannerImg": BannerDos,
+        "bannerTitle": "Second slide label.",
+        "bannerText": "Nulla vitae elit libero, a pharetra augue mollis interdum",
+    },{
+        "id": 3,
+        "bannerImg": BannerTres,
+        "bannerTitle": "Third slide label.",
+        "bannerText": "Nulla vitae elit libero, a pharetra augue mollis interdum",
+    }]
+    
     return(
-        <Carousel>
-            <Carousel.Item>
-                <img
-                className="d-block w-100 h-25"
-                src={props.url}
-                alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+        <Listcarrusel
+            carruselList={data}
+        />
     )
 }
-
-export default Carrusel
