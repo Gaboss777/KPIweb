@@ -1,14 +1,13 @@
 import React from "react";
-import Navbar from "../Components/navbar";
-import { Carrusel } from "../Components/carousel";
-import Info from "../Components/info"
+import NavKPI from "../Components/navbar";
+import {Banner, MBanner} from '../Components/banner'
 
 function Inicio(){
     return(
         <div>
-            <Navbar />
-            <Carrusel />
-            <Info />
+            <NavKPI />
+            <Banner />
+            <MBanner />
         </div>
     )
 }
