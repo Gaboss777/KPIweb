@@ -61,3 +61,29 @@
     border-width: 4px;
     color: #f37121;
 }
+
+/* Info section */
+/* Imagen servicio */
+.img-serv {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-color: #f37121;
+    border-width: 10px;
+    border-style: solid;
+}
+
+/* Title */
+.title-kpi h1{
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #f37121;
+    border-style: solid;
+    background-color: transparent;
+    color: #111d5e;
+}
+
+/* Footer */
+.footer-kpi {
+    height: 10rem;
+}

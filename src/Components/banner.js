@@ -1,8 +1,8 @@
 import React from 'react';
 import { Jumbotron, Button, Container, Row, Col } from 'react-bootstrap';
 
+// Banner Principal
 export const Banner = (props) => {
-
     return(
         <Jumbotron fluid className='mb-0 p-0'>
             <div className='p-0'>
@@ -16,6 +16,7 @@ export const Banner = (props) => {
     )
 }
 
+// Banner Medio
 export const MBanner = (props) => {
     const row = props.row;
 
@@ -28,7 +29,7 @@ export const MBanner = (props) => {
                     </Col>
                     <Col>
                         <p className='p-4'>{props.text}</p>
-                        <Button href='#' className='hvr-rectangle-in contact-btn float-right' size='lg'>CONTACTANOS</Button>
+                        <Button href='#' className='hvr-rectangle-in contact-btn float-right' size='lg'>{props.btnInfo}</Button>
                     </Col>
                 </Row>
             </Container>
@@ -39,7 +40,7 @@ export const MBanner = (props) => {
             <div className='mid-banner text-white p-5 text-center'>
                 <h1>{props.tittle}</h1>
                 <p className='p-4'>{props.text}</p>
-                <Button href='#' className='hvr-rectangle-in contact-btn' size='lg'>CONTACTANOS</Button>
+                <Button href='#' className='hvr-rectangle-in contact-btn' size='lg'>{props.btnInfo}</Button>
             </div>
         </Container>
     )
