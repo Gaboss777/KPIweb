@@ -22,12 +22,13 @@ function Inicio(){
             />
             <Container fluid className='w-75'>
                 <InfoTitle titleInfo='SERVICIOS'/>
-                <Row className='my-5 text-justify'>
+                <Row className='my-5'>
                     <ImagenCircle img={Soporte1} />
                     <TextCircle 
                         titleInfo='Soporte Tecnico'
                         textInfo='Reprehenderit laboris dolor pariatur labore deserunt qui nulla eiusmod reprehenderit ex laboris adipisicing magna. Quis dolore elit cupidatat adipisicing nulla elit. Irure culpa reprehenderit dolore nostrud Lorem dolor est ad exercitation mollit laboris. Tempor exercitation labore nisi ad magna non magna. Aliquip aute amet magna nisi amet exercitation enim cupidatat eiusmod aliqua nisi. Enim cillum occaecat eu pariatur tempor laborum in minim ipsum ad. Irure magna reprehenderit sint non voluptate.'
                         BtnInfo='Mas info'
+                        Titleright
                     />
                 </Row>
                 <Row className='my-5 text-justify'>
@@ -39,12 +40,13 @@ function Inicio(){
                     />
                     <ImagenCircle img={Redes1} />
                 </Row>
-                <Row className='my-5 text-justify'>
+                <Row className='my-5'>
                     <ImagenCircle img={CCTV} />
                     <TextCircle 
                         titleInfo='Seguridad'
                         textInfo='Reprehenderit laboris dolor pariatur labore deserunt qui nulla eiusmod reprehenderit ex laboris adipisicing magna. Quis dolore elit cupidatat adipisicing nulla elit. Irure culpa reprehenderit dolore nostrud Lorem dolor est ad exercitation mollit laboris. Tempor exercitation labore nisi ad magna non magna. Aliquip aute amet magna nisi amet exercitation enim cupidatat eiusmod aliqua nisi. Enim cillum occaecat eu pariatur tempor laborum in minim ipsum ad. Irure magna reprehenderit sint non voluptate.'
                         BtnInfo='Mas info'
+                        Titleright
                     />
                 </Row>
                 <Row className='my-5 text-justify'>

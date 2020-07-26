@@ -5,7 +5,7 @@ import {Container, Row, Col, Button} from 'react-bootstrap'
 export const InfoTitle = (props) => {
     return(
         <Container>
-            <Row className='justify-content-center mx-auto my-4 title-kpi w-25'>
+            <Row className='mx-auto my-4 title-kpi w-25'>
                 <h1 className='p-2'>{props.titleInfo}</h1>
             </Row>
         </Container>
@@ -14,7 +14,7 @@ export const InfoTitle = (props) => {
 
 // Titulo Secundario
 export const SecondTitle = props => {
-    return <h2>{props.STitle}</h2>
+    return <h2 className={`${props.Titleright ? "text-right" : "text-left" }`}>{props.STitle}</h2>
 }
 
 // Imagenes Redondas
@@ -30,8 +30,8 @@ export const ImagenCircle = (props) => {
 export const TextCircle = (props) => {
     return(
             <Col>
-                <SecondTitle STitle={props.titleInfo} className='my-3'/>
-                <p>{props.textInfo}</p>
+                <SecondTitle STitle={props.titleInfo} Titleright={props.Titleright} className='my-3 text-right'/>
+                <p className='text-justify'>{props.textInfo}</p>
                 <Button href='#' className={`contact-btn btn-kpi ${props.left ? "float-left" : "float-right"}`} size='lg'>{props.BtnInfo}</Button>
             </Col>
     )
