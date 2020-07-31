@@ -4,7 +4,7 @@
 }
 
 .menu-item .m-icon{
-    width: 10rem;
+    width: 11rem;
     height: 3.125rem;
     font-weight: bold;
     color: #111d5e!important;
@@ -86,4 +86,9 @@
 /* Footer */
 .footer-kpi {
     height: 10rem;
+}
+
+.text-footer {
+    font-size: 1.125rem;
+    font-weight: bold;
 }

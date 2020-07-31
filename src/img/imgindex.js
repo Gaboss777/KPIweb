@@ -6,6 +6,7 @@ import Seccion1 from './section_1.png';
 import Seccion2 from './section_2.png';
 import Banner1 from './fondo Banner 1.png';
 import LogoKPI from './Logo KPI Photoshop 1.png';
+import LogoKPIBlanco from './Logo KPI Blanco.png';
 import Laptop2 from './Laptop2.jpg';
 import CCTV from './CCTV1.jpg';
 import Redes1 from './Redes1.jpg';
@@ -24,5 +25,6 @@ export {
     CCTV,
     Redes1,
     Soporte1,
+    LogoKPIBlanco,
 
 }
