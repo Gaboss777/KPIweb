@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagramSquare, faFacebookSquare, faWhatsappSquare} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
-export const Footer = (props) => {
+export const Footer = () => {
     return(
         <Container fluid className='bg-dark footer-kpi p-4' >
             <Row className='text-white'>

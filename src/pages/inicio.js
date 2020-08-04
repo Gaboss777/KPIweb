@@ -1,5 +1,4 @@
 import React from "react";
-import NavKPI from "../Components/navbar";
 import { Banner, MBanner } from '../Components/banner';
 import { Container, Row } from 'react-bootstrap';
 import { ImagenCircle, TextCircle, InfoTitle } from '../Components/info';
@@ -9,7 +8,6 @@ import { Footer } from '../Components/footer';
 function Inicio(){
     return(
         <div>
-            <NavKPI />
             <Banner
                 img={Banner1}
                 titleH1='Tu mejor opcion en'

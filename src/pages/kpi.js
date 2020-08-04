@@ -1,14 +1,14 @@
 import React from "react";
 import NavKPI from "../Components/navbar";
 import {Banner, MBanner} from '../Components/banner';
-import Banner1 from '../img/Banner3.jpg';
+import {Laptop1} from '../img/imgindex';
 
 function NosotrosKPI(){
     return(
         <div>
             <NavKPI />
             <Banner 
-                bgImg={Banner1}
+                bgImg={Laptop1}
                 titleH2='NOSOTROS KPI'
             />
             <MBanner
